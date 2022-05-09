@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles/navbar_style.css" rel="stylesheet">
+    <link href="./styles/login_style.css" rel="stylesheet">
+    <title>Είσοδος</title>
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="logo">
+        <img src="./media/Logo/logotop.svg" id="logo" alt="bitcoin-logo">
+    </div>
+    <nav class="navbar">
+        <div class="navbar-links">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html">
+                        <span class="icon"></span>
+                        <img src="./media/Icons/icon-home.png" />
+                        <span class="icon-text">Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="basics.html">
+                        <span class="icon"></span>
+                        <img src="./media/Icons/icon-basics.png" />
+                        <span class="icon-text">Basics</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="more.html">
+                        <span class="icon"></span>
+                        <img src="./media/Icons/icon-more.png" />
+                        <span class="icon-text">More</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="quiz.html">
+                        <span class="icon"></span>
+                        <img src="./media/Icons/icon-quiz.png" />
+                        <span class="icon-text">Quiz</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="sign-up.html">
+                        <span class="icon"></span>
+                        <img src="./media/Icons/icon-signup.png" />
+                        <span class="icon-text">Sign Up</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html">
+                        <span class="icon"></span>
+                        <img src="./media/Icons/icon-login.png" />
+                        <span class="icon-text">Login</span>
+                    </a>
+                </li>
+            </ul>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+        </div>
+    </nav>
+
+    <form action="action_page.php" style="border:1px solid #ccc">
+        <div class="container">
+            <p>Παρακαλώ προσθέστε τα στοιχεία σας για να συνδεθείτε στον λογαριασμό</p>
+            <hr>
+            <label for="Username"><b>Username</b></label>
+            <input type="text" placeholder="Εισάγετε το username" name="usr" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Εισάγετε το password" name="psw" required>
+            
+            <div class="clearfix">
+                <button type="button" class="loginbtn" onclick="window.location.href='sign-up.html'">Είστε νέος χρήστης;
+                    Πατήστε εδώ</button>
+                <button type="submit" class="signupbtn">Είσοδος</button>
+            </div>
+        </div>
+    </form>
+
+    <script src="./scripts/navbar.js"></script>
+</body>
+
+</html>

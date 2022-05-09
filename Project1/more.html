@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles/navbar_style.css" rel="stylesheet">
+    <title>Περισσότερα</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        li {
+
+            font-weight: bold;
+            font-size:1.2rem;
+            margin-bottom: 2px;
+        }
+
+       @media screen and (max-width: 768px) {
+
+            #nick,#nakamoto,#craig {
+                width: 42%;
+                
+            }
+            
+        }
+
+        @media screen and (max-width: 600px) {
+
+            #nick,#nakamoto,#craig {
+                width: 55%;
+            }
+            video{
+                    width:400px;
+                    height:250px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="logo">
+        <img src="./media/Logo/logotop.svg" id="logo" alt="bitcoin-logo">
+    </div>
+    <nav class="navbar">
+        <div class="navbar-links">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html">
+                        <span class="icon"></span>
+                        <img src="./media/Icons/icon-home.png" />
+                        <span class="icon-text">Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="basics.html">
+                        <span class="icon"></span>
+                        <img src="./media/Icons/icon-basics.png" />
+                        <span class="icon-text">Basics</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="more.html">
+                        <span class="icon"></span>
+                        <img src="./media/Icons/icon-more.png" />
+                        <span class="icon-text">More</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="quiz.html">
+                        <span class="icon"></span>
+                        <img src="./media/Icons/icon-quiz.png" />
+                        <span class="icon-text">Quiz</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="sign-up.html">
+                        <span class="icon"></span>
+                        <img src="./media/Icons/icon-signup.png" />
+                        <span class="icon-text">Sign Up</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html">
+                        <span class="icon"></span>
+                        <img src="./media/Icons/icon-login.png" />
+                        <span class="icon-text">Login</span>
+                    </a>
+                </li>
+            </ul>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+        </div>
+    </nav>
+
+    <div style="border:1px solid #ccc">
+        <h2>Περισσότερες πληροφορίες για τους "πιθανούς" δημιουργητές του Bitcoin</h2>
+
+        <a href="https://www.youtube.com/watch?v=3dje9JyIjSc" target = "_blank">Μάθε περισσότερα για τον Dorian Νanakomoto και για την σχέση του σχετικά με το bitcoin</a>
+        <br>
+        <br>
+        <img src="./media/Pictures/nakamoto.jpg" id="nakamoto" alt="dorian nakamoto" width=350px>
+        <br>
+        <br>
+        <a href="https://www.youtube.com/watch?v=3FA3UjA0igY" target = "_blank">Η συνέντευξη του Nick Szabo για την τεχνολογία γύρω από το bitcoin</a>
+        <br>
+        <br>
+        <img src="./media/Pictures/nick szabo.png" id="nick" alt="nick szabo" width=300px>
+        <br>
+        <br>
+        <a href="https://www.youtube.com/watch?v=5DCAC1j2HTY" target = "_blank">Η συνέντευξη του Craig Wright ο οποίος υποστηρίζει ότι είναι ο δημιουργός του bitcoin </a>
+        <br>
+        <br>
+        <img src="./media/Pictures/craig wright.png" id="craig" alt="craig wright" width=350px>
+
+        <h2>Eνδεικτίκα παραδείγματα εναλλακτικών κρυπτονομισματών</h2>
+    
+        <ol>
+            <li>Ethereum</li>
+            <li>Cardano</li>
+            <li>Luna</li>
+            <li>Bnb</li>
+        </ol>
+
+        <br>
+        <h2>Τι είναι το Ethereum;</h2>
+        <video width="600" height="400" controls>
+            <source src="./media/Video/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <br>
+        <h2>Ethereum Whitepaper</h2>
+        <a href="./media/Whitepapers/ethereum.pdf" download="ethwhitepaper">Κατεβάστε το ethereum whitepaper</a>
+    </div>
+    <script src="./scripts/navbar.js"></script>
+</body>
+</html>

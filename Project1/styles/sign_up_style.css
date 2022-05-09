@@ -1,0 +1,113 @@
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.gender-radio {
+
+    font-size: 17px;
+    margin: auto;
+    padding-top: 5px;
+}
+
+#custom-button {
+    padding: 14px 20px;
+    color: white;
+    background-color: steelblue;
+    font-weight: bold;
+    font-size: large;
+}
+
+#custom-text {
+    font-family: sans-serif;
+    color: #aaa;
+}
+
+.birthday {
+    margin: auto;
+    font-size: 30px;
+}
+
+select {
+    font-size: 17px;
+    padding: 2px;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+.loginbtn {
+    background-color: orange;
+}
+
+
+
+.loginbtn,
+.signupbtn {
+    float: left;
+    width: 50%;
+    font-weight: bold;
+    font-size: large;
+}
+
+.container {
+    padding: 16px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media screen and (max-width: 768px) {
+
+    .loginbtn,
+    .signupbtn,
+    #custom-button {
+        width: 75%;
+        margin: 0 0 5 0px;
+        position: relative;
+        left: 12%
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .loginbtn,
+    .signupbtn,
+    #custom-button {
+        width: 75%;
+        margin: 0 0 5 0px;
+        position: relative;
+        left: 12%
+    }
+}

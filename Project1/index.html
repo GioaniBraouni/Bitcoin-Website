@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles/navbar_style.css" rel="stylesheet">
+    <title>Αρχική</title>
+    <style>
+        .col-1 {
+            width: 80%;
+        }
+    
+        .col-2 {
+            width: 100%
+        }
+    
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    
+        #btc-photo {
+            margin-top: 1%;
+            margin-right: 50%;
+            width: 350px;
+        }
+    
+        p {
+            font-size: 1.2rem;
+        }
+
+        @media screen and (max-width: 768px) {
+
+            #btc-photo {
+                width: 290px;
+                
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+
+            #btc-photo {
+                width: 225px;
+                
+            }
+        }
+    </style>
+</head>
+
+<body> 
+        <div class="logo">
+            <img src="./media/Logo/logotop.svg" id="logo" alt="bitcoin-logo" >
+        </div>
+        <nav class="navbar">
+            <div class="navbar-links">
+                <ul class="nav-menu">
+                    <li class = "nav-item">
+                        <a href="index.html">
+                            <span class="icon"></span>
+                            <img src="./media/Icons/icon-home.png" />
+                            <span class="icon-text">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="basics.html">
+                            <span class="icon"></span>
+                            <img src="./media/Icons/icon-basics.png" />
+                            <span class="icon-text">Basics</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="more.html">
+                            <span class="icon"></span>
+                            <img src="./media/Icons/icon-more.png" />
+                            <span class="icon-text">More</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="quiz.html">
+                            <span class="icon"></span>
+                            <img src="./media/Icons/icon-quiz.png" />
+                            <span class="icon-text">Quiz</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="sign-up.html">
+                            <span class="icon"></span>
+                            <img src="./media/Icons/icon-signup.png" />
+                            <span class="icon-text">Sign Up</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html">
+                            <span class="icon"></span>
+                            <img src="./media/Icons/icon-login.png" />
+                            <span class="icon-text">Login</span>
+                        </a>
+                    </li>
+                </ul>
+                <a href="#" class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+            </div>
+        </nav>
+    <div style="border:1px solid #ccc">
+        
+        <h1>Τι είναι το Bitcoin;</h1>
+        
+        <div class="col-1">
+            <p>
+            <b>Τον Οκτώβριο του 2008</b> έγινε η δημοσίευση ενός <a href="./media/Whitepapers/bitcoin.pdf">Whitepaper</a> με το όνομα <b>Bitcoin: A P2P Electronic Cash System</b> από κάποιον
+            <b>Satoshi Nakamoto.</b>
+            Μέσα στην πολύ σύντομη έκθεση των 9 σελίδων, αναφερόταν στην δημιουργία ενός <b>πλήρους αποκεντρωμένου νομίσματος</b>, το οποίο
+            θα είχε το όνομα <b>Bitcoin</b> (BTC) και θα “έτρεχε” πάνω σε μια τεχνολογία η οποία ονομαζόταν <b>Blockchain</b>.
+            </p>
+        </div>
+
+        <h2>Το Bitcoin, με λίγα λόγια, αποτελεί μια <b>μορφή ψηφιακού αποκεντρωμένου χρήματος.</b></h2>
+        <div class="col-2">
+            <ol>
+                <li><b>Ψηφιακό</b> διότι διακινείται μονάχα μέσα στο Internet χωρίς να υπάρχει σε φυσική μορφή.</li>
+                <li><b>Αποκεντρωμένο</b> διότι δεν εκδίδεται ούτε ελέγχεται από μια κεντρική αρχή (μια τράπεζα ή μια κυβέρνηση) αλλά
+                    τρέχει
+                    αυτόνομα με τη δική του νομισματική πολιτική στο δίκτυο του.</li>
+                <li><b>Χρήμα</b> διότι μπορεί να μεταφέρει αλλά και να διαφυλάξει αξία.</li>
+            </ol>
+        </div>
+        <img src="./media/Pictures/bitcoin_glasses.jpg" id="btc-photo" alt="bitcoin-photo">
+    </div>
+    <script src="./scripts/navbar.js"></script>
+</body>
+</html>

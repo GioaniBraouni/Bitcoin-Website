@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+
+.navbar a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+
+.navbar {
+    background-color: #F5F5F5;
+    min-height: 70px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 24px;
+
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-item ul {
+    display: flex;
+}
+
+.nav-item:hover {
+    transition: 0.7s ease;
+    transform: translateY(-7px);
+}
+
+.toggle-button {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+
+ul {
+    padding: 10;
+    margin: 0 0 0 100px;
+    list-style: none;
+}
+
+li {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.logo img {
+    position: absolute;
+    margin-top: 20px;
+    width: 160px;
+
+}
+
+.toggle-button {
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35px;
+}
+
+.toggle-button .bar {
+    height: 4px;
+    width: 100%;
+    background-color: orange;
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .toggle-button {
+        display: block;
+    }
+
+    .toggle-button.active.bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .toggle-button.active.bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .toggle-button.active.bar:nth-child(0) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+
+    .nav-menu {
+        display: none;
+        width:fit-content;
+        margin-top: 60px;
+        margin-left: 1px;
+
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .toggle-button {
+        display: block;
+    }
+
+    .toggle-button.active.bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .toggle-button.active.bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .toggle-button.active.bar:nth-child(0) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+
+    .nav-menu {
+        display: none;
+        width: fit-content;
+        margin-top: 60px;
+        margin-left: 1px;
+    }
+
+    .icon-text {
+        font-size: 1rem;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+}
